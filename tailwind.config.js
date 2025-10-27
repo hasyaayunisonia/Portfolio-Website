@@ -10,15 +10,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        ...colors,
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#8ccbc0",
+        secondary: "#ba99e6",
       },
     },
-    colors: {
-      ...colors,
-      primary: colors.purple,
-      secondary: colors.pink,
-    },
+    // colors: {
+    //   ...colors,
+    //   // primary: colors.purple,
+    //   // secondary: colors.pink,
+    // },
   },
   plugins: [],
 };

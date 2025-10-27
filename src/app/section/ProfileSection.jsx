@@ -18,7 +18,7 @@ const ProfileSection = () => {
           className="col-span-8 order-2 md:order-1 place-self-center text-center md:text-left justify-self-center md:justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Hello I&apos;m
             </span>
             <br />
