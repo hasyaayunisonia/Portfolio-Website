@@ -2,15 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import adaImage from "@/app/images/me.png";
-import { TypeAnimation } from "react-type-animation";
+import myImage from "@/app/images/me.png";
 import { motion } from "framer-motion";
 
 const ProfileSection = () => {
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* TEKS */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -54,7 +52,7 @@ const ProfileSection = () => {
         >
           <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#181818]">
             <Image
-              src={adaImage}
+              src={myImage}
               alt="Hero image"
               fill
               sizes="(max-width: 1024px) 250px, 400px"
