@@ -21,7 +21,7 @@ const experiences = [
   },
 ];
 
-const ExperienceSection = () => {
+const ExperiencesSection = () => {
   return (
     <section>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
@@ -52,4 +52,4 @@ const ExperienceSection = () => {
     </section>
   );
 };
-export default ExperienceSection;
+export default ExperiencesSection;
