@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import myLogo from "@/app/images/myLogo.png";
+import myLogo from "@/app/myLogo.png";
 import Image from "next/image";
 
 const navLinks = [
