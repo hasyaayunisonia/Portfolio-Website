@@ -105,7 +105,7 @@ const projectsData = [
   },
 ];
 
-const ProjectSection = () => {
+const ProjectsSection = () => {
   const [selectedTag, setSelectedTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -124,7 +124,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -143,6 +143,11 @@ const ProjectSection = () => {
           onClick={() => handleTagChange("Vue")}
           name="Vue"
           isSelected={selectedTag === "Vue"}
+        />
+        <ProjectTag
+          onClick={() => handleTagChange("Next.js")}
+          name="Next.js"
+          isSelected={selectedTag === "Next.js"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -168,4 +173,4 @@ const ProjectSection = () => {
     </section>
   );
 };
-export default ProjectSection;
+export default ProjectsSection;

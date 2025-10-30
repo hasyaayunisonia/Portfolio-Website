@@ -8,19 +8,19 @@ import { motion } from "framer-motion";
 const ProfileSection = () => {
   return (
     <section className="lg:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center justify-items-center md:justify-items-start">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 order-2 md:order-1 place-self-center text-center md:text-left justify-self-center md:justify-self-start"
+          className="col-span-8 order-2 md:order-1 text-center md:text-left"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Hello I&apos;m
             </span>
             <br />
-            <span className="text-4xl sm:text-5xl lg:text-8xl font-extrabold text-white mb-4 block">
+            <span className="text-4xl sm:text-4xl lg:text-7xl font-extrabold text-white mb-4 block">
               Hasya Ayuni Sonia
             </span>
           </h1>
@@ -48,7 +48,7 @@ const ProfileSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 order-1 md:order-2 place-self-center mt-4 lg:mt-0"
+          className="col-span-4 order-1 md:order-2 flex justify-center md:justify-end mt-4 lg:mt-0"
         >
           <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#181818]">
             <Image
