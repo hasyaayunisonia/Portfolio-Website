@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo79 from "@/app/images/experiences/79.png";
-import logoBims from "@/app/images/experiences/bims.png";
+import assets from "@/app/assets/index.js";
 
 const experiences = [
   {
@@ -10,14 +9,14 @@ const experiences = [
     company: "PT. Padepokan Tujuh Sembilan",
     role: "Software Developer",
     period: "Sept 2023 - Sept 2025 ◦ 2 years",
-    logo: logo79,
+    logo: assets.experiences.logo79,
   },
   {
     id: 2,
     company: "PT. Bima Inspira Solusindo (BIMS)",
     role: "Full Stack Developer",
     period: "July - Sept 2022 ◦ 2 months",
-    logo: logoBims,
+    logo: assets.experiences.logoBims,
   },
 ];
 

@@ -3,40 +3,29 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Marquee } from "../registry/magicui/marquee";
 
-import ReactLogo from "@/app/images/technologies/reactLogo.png";
-import VueLogo from "@/app/images/technologies/vueLogo.png";
-import JavaScriptLogo from "@/app/images/technologies/javascriptLogo.png";
-import TypeScriptLogo from "@/app/images/technologies/typescriptLogo.png";
-import PostgresqlLogo from "@/app/images/technologies/postgresqlLogo.png";
-import MongodbLogo from "@/app/images/technologies/mongodbLogo.png";
-import MySqlLogo from "@/app/images/technologies/mysqlLogo.png";
-import OracleLogo from "@/app/images/technologies/oracleLogo.png";
-import JavaLogo from "@/app/images/technologies/javaLogo.png";
-import NextJsLogo from "@/app/images/technologies/nextjsLogo.jpg";
-import GitLogo from "@/app/images/technologies/gitLogo.png";
-import DockerLogo from "@/app/images/technologies/dockerLogo.png";
-import CodeIgniterLogo from "@/app/images/technologies/codeigniterLogo.png";
-import SwaggerLogo from "@/app/images/technologies/swaggerLogo.png";
-import MuiLogo from "@/app/images/technologies/muiLogo.png";
-import AntdLogo from "@/app/images/technologies/antdLogo.png";
+import assets from "../assets";
 
 const logos = [
-  { src: ReactLogo, alt: "React" },
-  { src: VueLogo, alt: "Vue" },
-  { src: NextJsLogo, alt: "Next.js" },
-  { src: JavaScriptLogo, alt: "JavaScript" },
-  { src: TypeScriptLogo, alt: "TypeScript" },
-  { src: PostgresqlLogo, alt: "Postgresql" },
-  { src: MuiLogo, alt: "Material UI" },
-  { src: AntdLogo, alt: "Ant Design" },
-  { src: MongodbLogo, alt: "Mongodb" },
-  { src: MySqlLogo, alt: "MySql" },
-  { src: OracleLogo, alt: "Oracle" },
-  { src: CodeIgniterLogo, alt: "CodeIgniter" },
-  { src: JavaLogo, alt: "Java" },
-  { src: SwaggerLogo, alt: "Swagger" },
-  { src: GitLogo, alt: "Git" },
-  { src: DockerLogo, alt: "Docker" },
+  { src: assets.technologies.ReactLogo, alt: "React" },
+  { src: assets.technologies.ViteLogo, alt: "Vite" },
+  { src: assets.technologies.VueLogo, alt: "Vue" },
+  { src: assets.technologies.NextJsLogo, alt: "Next.js" },
+  { src: assets.technologies.JavaScriptLogo, alt: "JavaScript" },
+  { src: assets.technologies.TypeScriptLogo, alt: "TypeScript" },
+  { src: assets.technologies.PostgresqlLogo, alt: "Postgresql" },
+  { src: assets.technologies.ReduxLogo, alt: "Redux" },
+  { src: assets.technologies.MuiLogo, alt: "Material UI" },
+  { src: assets.technologies.AntdLogo, alt: "Ant Design" },
+  { src: assets.technologies.MongodbLogo, alt: "Mongodb" },
+  { src: assets.technologies.MySqlLogo, alt: "MySql" },
+  { src: assets.technologies.OracleLogo, alt: "Oracle" },
+  { src: assets.technologies.CodeIgniterLogo, alt: "CodeIgniter" },
+  { src: assets.technologies.PhpLogo, alt: "PHP" },
+  { src: assets.technologies.JavaLogo, alt: "Java" },
+  { src: assets.technologies.SwaggerLogo, alt: "Swagger" },
+  { src: assets.technologies.KafkaLogo, alt: "Kafka" },
+  { src: assets.technologies.GitLogo, alt: "Git" },
+  { src: assets.technologies.DockerLogo, alt: "Docker" },
 ];
 
 export default function TechnologiesSection() {

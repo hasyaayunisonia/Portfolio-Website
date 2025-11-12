@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import myImage from "@/app/images/me.png";
+import assets from "../assets";
 import { motion } from "framer-motion";
 
 const ProfileSection = () => {
@@ -52,7 +52,7 @@ const ProfileSection = () => {
         >
           <div className="relative aspect-square w-[250px] md:w-[300px] lg:w-[400px] rounded-full overflow-hidden bg-[#181818]">
             <Image
-              src={myImage}
+              src={assets.images.myImage}
               alt="Hero image"
               fill
               sizes="(max-width: 1024px) 250px, 400px"
