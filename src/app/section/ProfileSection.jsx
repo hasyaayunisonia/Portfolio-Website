@@ -48,9 +48,9 @@ const ProfileSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 order-1 md:order-2 flex justify-center md:justify-end mt-4 lg:mt-0"
+          className="col-span-8 md:col-span-4 order-1 md:order-2 flex justify-center md:justify-end w-full mt-4 lg:mt-0"
         >
-          <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#181818]">
+          <div className="relative aspect-square w-[250px] md:w-[300px] lg:w-[400px] rounded-full overflow-hidden bg-[#181818]">
             <Image
               src={myImage}
               alt="Hero image"
