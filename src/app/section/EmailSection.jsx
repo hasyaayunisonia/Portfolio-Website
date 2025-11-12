@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/media/github-icon.svg";
-import LinkedInIcon from "../../../public/media/linkedin-icon.svg";
+import assets from "../assets";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -44,7 +43,7 @@ const EmailSection = () => {
   };
   return (
     <section
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="scroll-mt-20 grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
       id="contact"
     >
       <div>
@@ -58,10 +57,10 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/hasyaayunisonia" target="_blank">
-            <Image src={GithubIcon} alt="Github" />
+            <Image src={assets.media.GithubIcon} alt="Github" />
           </Link>
           <Link href="www.linkedin.com/in/hasya-ayuni-sonia" target="_blank">
-            <Image src={LinkedInIcon} alt="Linkedin" />
+            <Image src={assets.media.LinkedInIcon} alt="Linkedin" />
           </Link>
         </div>
       </div>
