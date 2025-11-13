@@ -33,7 +33,7 @@ export default function TechnologiesSection() {
     <section className="text-white py-20" id="technologies">
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-          <Marquee pauseOnHover className="[--duration:20s]">
+          <Marquee pauseOnHover className="[--duration:30s]">
             {logos.map((logo, i) => (
               <div key={i} className="mx-4 flex items-center justify-center">
                 <Image
