@@ -4,7 +4,7 @@ import React from "react";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
-    <div>
+    <div className="h-full rounded-xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-[#181818] flex flex-col">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
@@ -12,6 +12,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
+          backgroundColor: "#1E1E1E",
         }}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
@@ -29,7 +30,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link> */}
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="text-white rounded-b-xl mt-3 bg-[#181818] pb-6 px-4">
         <h5 className="font-xl font-semibold mb-2">{title}</h5>{" "}
         <p className="text-[#ADB7BE]">{description}</p>
       </div>

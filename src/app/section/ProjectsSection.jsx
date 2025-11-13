@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ProjectTag from "../components/ProjectTag";
 import assets from "../assets";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 
 const projectsData = [
   {
@@ -129,7 +129,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="scroll-mt-20">
+    <section id="projects" className="scroll-mt-32">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -155,29 +155,34 @@ const ProjectsSection = () => {
           isSelected={selectedTag === "Next.js"}
         />
       </div>
-      <ul
-        ref={ref}
-        className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12"
-      >
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
+      <AnimatePresence mode="wait">
+        <motion.ul
+          key={selectedTag}
+          className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12 items-stretch"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          {filteredProjects.map((project, index) => (
+            <motion.li
               key={project.id}
-              imgUrl={project.image}
-              title={project.title}
-              description={project.description}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.2, delay: index * 0.05 }}
+            >
+              <ProjectCard
+                imgUrl={project.image}
+                title={project.title}
+                description={project.description}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </motion.li>
+          ))}
+        </motion.ul>
+      </AnimatePresence>
     </section>
   );
 };
