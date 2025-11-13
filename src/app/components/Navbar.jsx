@@ -40,7 +40,7 @@ const Navbar = () => {
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="relative w-20 h-20 md:w-20 md:h-20">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20">
             <Image
               src={myLogo}
               alt="My Logo"
