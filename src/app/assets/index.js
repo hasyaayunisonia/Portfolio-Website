@@ -1,6 +1,6 @@
 import logo79 from "./experiences/79.png";
 import logoBims from "./experiences/bims.png";
-import logoKAI from "./experiences/KAI.png";
+import logoKAI from "./experiences/kai.png";
 import BPI from "./projects/BPI.png";
 import ProdLoan from "./projects/ProdLoan.png";
 import Sijepe from "./projects/Sijepe.png";
