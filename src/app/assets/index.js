@@ -1,5 +1,6 @@
 import logo79 from "./experiences/79.png";
 import logoBims from "./experiences/bims.png";
+import logoKAI from "./experiences/KAI.png";
 import BPI from "./projects/BPI.png";
 import ProdLoan from "./projects/ProdLoan.png";
 import Sijepe from "./projects/Sijepe.png";
@@ -30,13 +31,16 @@ import CodeIgniterLogo from "./technologies/codeigniterLogo.png";
 import SwaggerLogo from "./technologies/swaggerLogo.png";
 import MuiLogo from "./technologies/muiLogo.png";
 import AntdLogo from "./technologies/antdLogo.png";
+import TailwindLogo from "./technologies/tailwindLogo.png";
 import ReduxLogo from "./technologies/reduxLogo.png";
+import LaravelLogo from "./technologies/laravelLogo.png";
 import myImage from "./images/me.png";
 
 const assets = {
   experiences: {
     logo79,
     logoBims,
+    logoKAI,
   },
   projects: {
     BPI,
@@ -73,7 +77,9 @@ const assets = {
     SwaggerLogo,
     MuiLogo,
     AntdLogo,
+    TailwindLogo,
     ReduxLogo,
+    LaravelLogo,
   },
   images: {
     myImage,
