@@ -7,6 +7,26 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 
 const projectsData = [
   {
+    id: 11,
+    title: "Rebuild Pusdalyan — Rail Service Control",
+    description:
+      "A web-based Rail Service Control platform developed to support the monitoring and management of railway service operations at KAI. The project involved rebuilding and modernizing the existing system with a more structured, intuitive, covering operational workflows, data management, filtering, reporting, and service monitoring.",
+    image: assets.projects.Pusdalyan,
+    tag: ["All", "Next.js", "Typescript"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 10,
+    title: "CMS KAI Access (Membership)",
+    description:
+      "A web-based CMS developed to support the management of KAI Access membership, including member data, membership status, and related information. The platform provides an intuitive interface for internal users to efficiently manage and monitor membership data.",
+    image: assets.projects.CMSMembership,
+    tag: ["All", "React", "Typescript"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
     id: 9,
     title:
       "Sistem Informasi Asuransi Pertanian (SIAP) PT Asuransi Jasa Indonesia",
@@ -120,7 +140,7 @@ const ProjectsSection = () => {
   };
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(selectedTag)
+    project.tag.includes(selectedTag),
   );
 
   const cardVariants = {

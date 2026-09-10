@@ -10,6 +10,8 @@ import Reengineering from "./projects/Reengineering.png";
 import KabarNikah from "./projects/KabarNikah.png";
 import TalentCenter from "./projects/TalentCenter.png";
 import Siap from "./projects/Siap.png";
+import CMSMembership from "./projects/CMSMembership.png";
+import Pusdalyan from "./projects/Pusdalyan.png";
 import GithubIcon from "./media/github-icon.svg";
 import LinkedInIcon from "./media/linkedin-icon.svg";
 import ReactLogo from "./technologies/reactLogo.png";
@@ -52,6 +54,8 @@ const assets = {
     KabarNikah,
     TalentCenter,
     Siap,
+    CMSMembership,
+    Pusdalyan,
   },
   media: {
     GithubIcon,
