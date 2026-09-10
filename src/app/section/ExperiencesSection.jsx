@@ -6,13 +6,20 @@ import assets from "@/app/assets/index.js";
 const experiences = [
   {
     id: 1,
+    company: "PT Kereta Api Indonesia (Persero)",
+    role: "Front End Developer",
+    period: "Dec 2025 - Present",
+    logo: assets.experiences.logoKAI,
+  },
+  {
+    id: 2,
     company: "PT. Padepokan Tujuh Sembilan",
     role: "Software Developer",
     period: "Sept 2023 - Sept 2025 ◦ 2 years",
     logo: assets.experiences.logo79,
   },
   {
-    id: 2,
+    id: 3,
     company: "PT. Bima Inspira Solusindo (BIMS)",
     role: "Full Stack Developer",
     period: "July - Sept 2022 ◦ 2 months",
